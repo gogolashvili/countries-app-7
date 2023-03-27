@@ -1,7 +1,7 @@
 import moon from "../images/moon.png";
 import { Outlet } from "react-router-dom";
 
-export default function Header() {
+export default function Headeri() {
   return (
     <>
       <header>
