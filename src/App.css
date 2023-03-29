@@ -48,18 +48,27 @@ header {
   height: 13px;
 }
 select {
-  width: 150px;
-  height: 20px;
+  width: 170px;
+  height: 40px;
+  font-size: 15px;
   border: none;
   outline: none;
   border-radius: 5px;
   background-color: #ffffff;
+  margin-right: 15px;
+  opacity: 0.7;
+}
+.selectDiv:hover {
+  cursor: pointer;
+}
+select:hover {
+  cursor: pointer;
 }
 .selectDiv {
   width: 250px;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   align-items: center;
   background-color: #ffffff;
@@ -73,7 +82,7 @@ select {
   height: 200px;
   display: flex;
   justify-content: center;
-  gap: 450px;
+  gap: 420px;
   align-items: center;
   align-content: center;
   background-color: #f2f2f2;
@@ -90,10 +99,12 @@ select {
   align-items: center;
   align-content: center;
   gap: 15px;
+  margin-left: 15px;
 }
 .mainCont {
   background-color: #f2f2f2;
   width: 100%;
+  min-height: 100vh;
 }
 input {
   width: 400px;
@@ -127,6 +138,9 @@ input {
   margin-left: 25px;
   margin-top: 40px;
 }
+.countryCard:hover {
+  cursor: pointer;
+}
 .nameCountry {
   font-family: "Nunito Sans";
   font-style: normal;
@@ -157,4 +171,33 @@ h3 {
   font-size: 12px;
   line-height: 16px;
   color: #758187;
+}
+.backDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.358);
+  margin: 30px;
+}
+.backImg {
+  width: 13px;
+  height: 13px;
+}
+h4 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111517;
+}
+.countyInfoDiv {
+  background-color: #758187;
+  width: 100%;
+  height: 100vh;
 }
