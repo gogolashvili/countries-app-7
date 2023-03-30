@@ -26,7 +26,9 @@ function App() {
     backgroundColor: isDarkMode ? "#202C36" : "",
     color: isDarkMode ? "white" : "black",
   };
-
+  if (!data) {
+    return;
+  }
   return (
     <div className="mainCont" style={appStyle}>
       <Headeri isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
@@ -39,7 +41,7 @@ function App() {
           />
           <Route
             path="/countries-app-7/:countryId"
-            element={<CountryInfo data={data} />}
+            element={<CountryInfo data={data} isDarkMode={isDarkMode} />}
           />
         </Routes>
       </BrowserRouter>

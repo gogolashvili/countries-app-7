@@ -177,15 +177,19 @@ h3 {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 10px;
-  width: 100px;
+  gap: 30px;
+  width: 130px;
   height: 40px;
   border-radius: 5px;
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.358);
-  margin: 30px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+.backDiv:hover {
+  cursor: pointer;
 }
 .backImg {
-  width: 13px;
+  width: 20px;
   height: 13px;
 }
 h4 {
@@ -197,7 +201,81 @@ h4 {
   color: #111517;
 }
 .countyInfoDiv {
-  background-color: #758187;
   width: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.infoDivRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.infoDivLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  width: 40%;
+}
+.flagInfoImg {
+  width: 40%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.358);
+}
+.infoDivUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+.infoDivDown {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: -15px;
+}
+button {
+  width: 100px;
+  height: 50px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #111517;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.358);
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 45px;
+  color: #111517;
+  line-height: 44px;
 }
