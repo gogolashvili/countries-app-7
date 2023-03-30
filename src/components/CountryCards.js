@@ -80,48 +80,52 @@ export default function CountryCards(props) {
           </select>
         </div>
       </div>
-      {filteredData.map((element) => {
-        return (
-          <div
-            key={element.name.common}
-            className="countryCard"
-            style={{ backgroundColor: props.isDarkMode ? "#2B3844" : "white" }}
-            onClick={() => {
-              navigate(`/countries-app-7/${element.name.common}`);
-            }}
-          >
-            <img
-              className="flag"
-              src={element.flags.png}
-              alt={`${element.name.common} flag`}
-            />
-            <h1
-              style={{ color: props.isDarkMode ? "white" : "" }}
-              className="nameCountry"
+      <div className="mapDiv">
+        {filteredData.map((element) => {
+          return (
+            <div
+              key={element.name.common}
+              className="countryCard"
+              style={{
+                backgroundColor: props.isDarkMode ? "#2B3844" : "white",
+              }}
+              onClick={() => {
+                navigate(`/countries-app-7/${element.name.common}`);
+              }}
             >
-              {element.name.common}
-            </h1>
-            <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
-              Population:{" "}
-              <h3 style={{ color: props.isDarkMode ? "white" : "" }}>
-                {element.population}
-              </h3>
-            </h2>
-            <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
-              Region:{" "}
-              <h3 style={{ color: props.isDarkMode ? "white" : "" }}>
-                {element.region}
-              </h3>
-            </h2>
-            <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
-              Capital:{" "}
-              <h3 style={{ color: props.isDarkMode ? "white" : "" }}>
-                {element.capital}
-              </h3>
-            </h2>
-          </div>
-        );
-      })}
+              <img
+                className="flag"
+                src={element.flags.png}
+                alt={`${element.name.common} flag`}
+              />
+              <h1
+                style={{ color: props.isDarkMode ? "white" : "" }}
+                className="nameCountry"
+              >
+                {element.name.common}
+              </h1>
+              <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
+                Population:{" "}
+                <h3 style={{ color: props.isDarkMode ? "white" : "" }}>
+                  {element.population}
+                </h3>
+              </h2>
+              <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
+                Region:{" "}
+                <h3 style={{ color: props.isDarkMode ? "white" : "" }}>
+                  {element.region}
+                </h3>
+              </h2>
+              <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
+                Capital:{" "}
+                <h3 style={{ color: props.isDarkMode ? "white" : "" }}>
+                  {element.capital}
+                </h3>
+              </h2>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
