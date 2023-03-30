@@ -45,7 +45,7 @@ export default function CountryInfo(props) {
               <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
                 Population:&nbsp;
                 <h3 style={{ color: props.isDarkMode ? "white" : "" }}>
-                  {countryInfo.population}
+                  {countryInfo.population.toLocaleString()}
                 </h3>
               </h2>
               <h2 style={{ color: props.isDarkMode ? "white" : "" }}>
